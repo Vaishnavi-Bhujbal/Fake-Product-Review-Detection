@@ -20,7 +20,7 @@ def load_data():
 model = load_model()
 df = load_data()
 
-st.title("🔍 Fake Product Review Detection System")
+st.title("🔍 Fake Product Review Detection")
 st.write("Machine Learning-based detection of fake and genuine product reviews.")
 
 # Dashboard
@@ -73,18 +73,7 @@ st.bar_chart(df["category"].value_counts().head(10))
 
 st.divider()
 
-# About
-st.header("About the Project")
+st.subheader("Product Categories")
+st.bar_chart(df["category"].value_counts().head(10))
 
-st.write("""
-**Objective:** To identify fake and genuine product reviews using
-Natural Language Processing and Machine Learning.
-
-**Technologies:**
-- Python
-- TF-IDF Vectorization
-- Logistic Regression
-- Scikit-learn
-- Streamlit
-- Pandas
-""")
+st.divider()
