@@ -190,34 +190,4 @@ st.divider()
 # ABOUT THE PROJECT
 # ----------------------------------
 
-st.header("ℹ️ About the Project")
 
-st.write("""
-**Objective:**
-
-The project identifies fake and genuine product reviews
-using Natural Language Processing and Machine Learning.
-
-**Technologies Used:**
-
-- Python
-- Pandas
-- TF-IDF Vectorization
-- Logistic Regression
-- Scikit-learn
-- Streamlit
-- Joblib
-
-**Working:**
-
-1. The user enters a product review.
-2. The review is processed by the trained ML model.
-3. The model predicts whether the review is fake or genuine.
-4. The prediction result is displayed on the website.
-""")
-
-st.divider()
-
-st.caption(
-    "Fake Product Review Detection System | Machine Learning Mini Project"
-)
